@@ -1,7 +1,18 @@
-# Tauri + React + Typescript
+# An Example of Using Drizzle ORM with Tauri JS
 
-This template should help get you started developing with Tauri, React and Typescript in Vite.
+Inspired by: Huakun Shen's drizzle-sqlite-proxy (https://github.com/HuakunShen/tauri-demo/tree/master/examples/drizzle-sqlite-proxy)
 
-## Recommended IDE Setup
+## Steps to run this project locally:
 
-- [VS Code](https://code.visualstudio.com/) + [Tauri](https://marketplace.visualstudio.com/items?itemName=tauri-apps.tauri-vscode) + [rust-analyzer](https://marketplace.visualstudio.com/items?itemName=rust-lang.rust-analyzer)
+```bash
+git clone https://github.com/walid1508/tauri-drizzle-orm-example 
+cd tauri-drizzle-orm-example
+npm install
+npx drizzle-kit generate
+```
+⚠️ and then code the output of `npx drizzle-kit generate`  ```(e.g : src-tauri/migrations/0000_lying_shadow_king.sql)``` to update the migrations path on src/db/migrations.ts and src-tauri/src/lib.rs
+
+
+```bash
+npm run tauri dev
+```
